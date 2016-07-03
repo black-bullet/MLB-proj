@@ -18,4 +18,4 @@ parameters:
     # A secret key that's used to generate certain security-related tokens
     secret:            ThisTokenIsNotSoSecretChangeIt
 
-    fantasy_data_secret: FantasyDataSecret
+    fantasy_data_secret: 599a01aaeb5e43e58280543d511938e6
