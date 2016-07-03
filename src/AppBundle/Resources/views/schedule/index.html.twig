@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <table>
+        <tr>
+            <th> дата</th>
+            <th> аббревиатура_команды_хозяева</th>
+            <th> аббревиатура_команды_гости</th>
+            <th> id_стадиона</th>
+        </tr>
+        {% for schedule in schedules %}
+            <tr>
+                <td>{{ schedule['date']['date']|date('Y-m-d') }}</td>
+                <td>{{ schedule['awayTeam'] }}</td>
+                <td>{{ schedule['homeTeam'] }}</td>
+                <td>{{ schedule['stadiumID'] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

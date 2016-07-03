@@ -1,0 +1,6 @@
+services:
+    app.parse_service:
+        class: AppBundle\Service\ScheduleParseService
+        arguments:
+            - '@doctrine.orm.entity_manager'
+            - '%fantasy_data_secret%'
